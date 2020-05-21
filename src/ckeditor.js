@@ -37,6 +37,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
@@ -72,7 +73,8 @@ DecoupledEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	PageBreak
 ];
 
 // Editor configuration.
@@ -98,6 +100,7 @@ DecoupledEditor.defaultConfig = {
 			'|',
 			'indent',
 			'outdent',
+			'pageBreak',
 			'|',
 			'link',
 			'blockquote',
